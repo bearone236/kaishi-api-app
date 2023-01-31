@@ -59,7 +59,6 @@ export const Movies = () => {
       const result = JSON.stringify(abc, null, 2);
       const data_result = JSON.parse(result);
 
-      // console.log(data_result);
 
       // JsonデータをSearchに外部出力するためにuseStateで情報保持
       setUseData(data_result);
@@ -67,6 +66,8 @@ export const Movies = () => {
     });
   }, []);
 
+
+  // ⬇︎ 検索機能
   const search = (value) => {
     if (value !== '') {
       const filteredList = useData.filter((member) =>
@@ -86,6 +87,8 @@ export const Movies = () => {
     setInputValue(e.target.value);
     search(e.target.value);
   };
+
+  // ⬆︎ 検索機能
 
   return (
     <div className="wrapper">
