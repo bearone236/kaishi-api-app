@@ -87,7 +87,6 @@ export const Movies = () => {
     setInputValue(e.target.value);
     search(e.target.value);
   };
-
   // ⬆︎ 検索機能
 
   return (
