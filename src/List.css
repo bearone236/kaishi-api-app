@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.search {
+  /* listのborder重なりをなくす方法 */
+  margin: 0 0 -2px;
+}
+
+.list {
+  border: 2px solid rgb(255, 105, 105);
+  padding: 10px 0;
+  padding-left: 15px;
+}
+
+.list_details {
+  display: flex;
+}
+
+.movies_title {
+  padding-left: 10px;
+  margin: auto 0;
+}
+
+.movie_details {
+  margin: 0 0 0 auto;
+  padding-right: 30px;
+}
+
+.click_button {
+  margin: auto 0;
+  margin-top: 20px;
+  height: 30px;
+  padding: 0px 20px;
+  border: none;
+  outline: none;
+  background: rgb(255, 72, 35);
+  color: #fff;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.click_button p {
+  font-weight: 700;
+}
+
+.click_button:hover {
+  background: #fff;
+  color: rgb(255, 72, 35);
+}
+
+.movies_main_title {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.movies_main_title p {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(231, 83, 83);
+}
+
+.inputText {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(183, 215, 254);
+}
+
+/*-----------------------------
+  button
+------------------------------*/
+
+.button_details {
+  display: flex;
+  justify-content: center;
+}
+
+.button_details .item {
+  height: 60px;
+  width: 140px;
+  box-sizing: border-box;
+  padding: 10px 30px;
+  margin: 20px;
+  border: none;
+  outline: none;
+  background: rgb(29, 129, 252);
+  color: #fff;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.button_details .item:hover {
+  background: #fff;
+  color: rgb(29, 129, 252);
+  font-weight: 700;
+}

@@ -1,13 +1,144 @@
-body {
+@charset "utf-8";
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  max-width: 100%;
+  background-color: #333;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.4rem;
+}
+
+.wrapper {
+  padding-top: 100px;
+}
+
+.janru {
+  display: flex;
+}
+
+/*-------------------------------------
+  Header.jsx
+--------------------------------------*/
+
+.header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 10px 0;
+  position: fixed;
+  z-index: 9999;
+}
+
+.header img {
+  width: 10%;
+  margin-left: 10%;
+}
+
+.header-link {
+  margin-right: 10%;
+}
+
+.header-link ul {
+  display: flex;
+}
+
+.header-link ul li {
+  list-style: none;
+  padding-right: 40px;
+}
+
+.header-link ul li a {
+  transition: all 0.5s;
+}
+
+.header-link a:hover {
+  color: red;
+}
+
+/*-------------------------------------
+  Movies
+--------------------------------------*/
+.movie ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.movie ul li {
+  list-style: none;
+  margin-top: 50px;
+  width: 50%;
+
+  /* border: 1px solid #fff; */
+}
+
+.movie .marvel_image {
+  left: 0;
+  width: 100px;
+  object-fit: cover;
+}
+
+.list_box {
+  margin-top: 10px;
+}
+
+.input_search {
+  padding: 5px 30px;
+  border: 2px solid rgb(255, 105, 105);
+}
+
+.input_search::placeholder {
+  font-weight: 700;
+  text-align: center;
+  /* color: rgb(255, 105, 105); */
+}
+
+.input_flex {
+  display: flex;
+}
+
+.input_flex p {
+  padding-top: 16px;
+  font-weight: 700;
+}
+
+.list_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*-------------------------------------
+  Watch
+--------------------------------------*/
+.watch {
+  padding-top: 300px;
+}
+
+/* sp */
+@media screen and (max-width: 710px) {
+  div {
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .movie ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .movie ul li {
+    width: 100%;
+  }
 }
