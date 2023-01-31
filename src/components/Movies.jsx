@@ -91,7 +91,6 @@ export const Movies = () => {
     <div className="wrapper">
       <div className="movies_main_title">
         <h3>Marvel映画作品一覧</h3>
-        <p>映画の数字をクリック！！</p>
       </div>
 
       <div>
