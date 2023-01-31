@@ -107,6 +107,7 @@ a {
 
 .input_flex {
   display: flex;
+  margin-right: 30px;
 }
 
 .input_flex p {
